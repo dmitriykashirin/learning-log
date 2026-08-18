@@ -9,5 +9,9 @@
   {{ form.as_p }}
   <button name="submit">Save changes</button>
 </form>
+<form action="{% url 'learning_logs:delete_entry' topic.id entry.id %}" method="post">
+  {% csrf_token %}
+  <button name="submit">Delete Entry</button>
+</form>
 
 {% endblock content %}

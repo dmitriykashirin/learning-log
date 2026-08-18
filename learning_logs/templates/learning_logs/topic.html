@@ -23,5 +23,9 @@
   {% empty %}
     <p>Ещё не добавлено ни одной записи.</p>
 {% endfor %}
+<form action="{% url 'learning_logs:delete_topic' topic.id %}" method="post">
+  {% csrf_token %}
+  <button name="submit">Delete Topic</button>
+</form>
 
 {% endblock content %}
