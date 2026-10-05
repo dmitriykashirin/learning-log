@@ -32,7 +32,7 @@
 - Python 3.14
 - Django 4.x
 - SQLite
-- HTML/CSS
+- HTML
 - Git
 
 ## Как запустить (для разработчика)
